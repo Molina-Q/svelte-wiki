@@ -24,6 +24,15 @@
 </nav>
 
 <style>
+    nav {
+        padding: 1rem;
+        background-color: var(--svg-white);
+
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid var(--svg-blue);
+    }
+    
     .dropdown {
         position: absolute;
         display: flex;
