@@ -1,4 +1,3 @@
-
 :root {
   --svg-white-01: rgb(246, 246, 233);
   --svg-white-02: rgb(244, 243, 230);
@@ -8,18 +7,23 @@
   --svg-white-06: rgb(234, 233, 220);
   --svg-blue: rgb(5, 0, 78);
   --svg-white: rgb(249, 248, 235);
-
-  
+  --svg-orange: #FD5F00;
 }
 
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne', sans-serif;
 }
 
 .square {
-  transition: fill 1s ease; /* Example of a custom easing */
+  transition: fill 1s ease;
 }
   
 /* 
