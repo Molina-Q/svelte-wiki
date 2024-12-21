@@ -151,9 +151,10 @@
 
 <style>
     canvas {
-        display: block;
+        position: fixed;
         width: 100%;
         height: auto;
         background-color: var(--svg-white);
+        z-index: -1;
     }
 </style>
