@@ -1,4 +1,5 @@
 <script>
+	import { Link } from "svelte-routing";
     let isOpen = $state(false);
 
     function toggleDropdown() {
@@ -13,9 +14,10 @@
     <button type="button" onclick={toggleDropdown}>Games</button>
 
     <div class={`dropdown ${!isOpen && 'dropdown-closed'}`}>
-        <a class="dropdown-item" href="/games">All games</a>
-        <a class="dropdown-item" href="/platform">Per platform</a>
-        <a class="dropdown-item" href="/developper">Per developper</a>
+        <Link class="dropdown-item" to="/games">All games</Link>
+        <Link class="dropdown-item" to="/platform">Per platform</Link>
+        <Link class="dropdown-item" to="/developper">Per developper</Link>
+        <Link class="dropdown-item" to="/create/games">Add game</Link>
     </div>
 
     <input type="search" name="" id="">
@@ -37,7 +39,8 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        background-color: #f1f1f1;
+        background-color: var(--svg-white);
+
         color: #333;
         text-decoration: none;
     }
